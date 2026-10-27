@@ -470,6 +470,27 @@
     color: var(--text-soft);
   }
 
+
+  .footer-links {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 22px;
+    font-size: 1.1rem;
+  }
+
+  .footer-links a {
+    color: var(--text-soft);
+    text-decoration: none;
+    border-bottom: 1px dashed var(--text-soft);
+    transition: color 0.2s;
+  }
+
+  .footer-links a:hover {
+    color: var(--text);
+  }
+
   .signature {
     font-family: 'Caveat', cursive;
     font-size: 1.8rem;
@@ -700,6 +721,13 @@
       <p>Kami siap membantu Anda</p>
       <p class="signature">✏ Sketch Dev Studio</p>
       <p style="margin-top:12px; font-size:1.05rem; color:var(--text-faint);">"Dari goresan, jadi game."</p>
+    
+      <div class="footer-links">
+        <a href="./">Beranda</a>
+        <a href="privacy">Kebijakan Privasi</a>
+        <a href="terms">Syarat & Ketentuan</a>
+        <a href="contact">Kontak</a>
+      </div>
     </div>
 
   </div>
@@ -865,6 +893,13 @@
       <p>We're here to help you</p>
       <p class="signature">✏ Sketch Dev Studio</p>
       <p style="margin-top:12px; font-size:1.05rem; color:var(--text-faint);">"From sketch, to game."</p>
+    
+      <div class="footer-links">
+        <a href="./">Home</a>
+        <a href="privacy">Privacy Policy</a>
+        <a href="terms">Terms of Service</a>
+        <a href="contact">Contact</a>
+      </div>
     </div>
 
   </div>
