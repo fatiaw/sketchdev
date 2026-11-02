@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Syarat & Ketentuan — Sketch Dev Studio</title>
+<title>Terms of Service — Sketch Dev Studio</title>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
@@ -403,7 +403,7 @@
 <body>
 
 <div class="controls">
-  <button class="control-btn" id="langBtn" onclick="toggleLang()">🇬🇧 English</button>
+  <button class="control-btn" id="langBtn" onclick="toggleLang()">🇮🇩 Indonesia</button>
   <button class="control-btn" id="modeBtn" onclick="toggleMode()">🌙 Gelap</button>
 </div>
 
@@ -412,7 +412,7 @@
   <!-- ============================================
        BAHASA INDONESIA
        ============================================ -->
-  <div class="lang-section active" id="lang-id">
+  <div class="lang-section" id="lang-id">
 
     <h1>Syarat & Ketentuan</h1>
     <p class="subtitle">Sketch Dev Studio — "Dari goresan, jadi game."</p>
@@ -601,6 +601,7 @@
         <a href="https://www.tiktok.com/@sketch.dev.studio" target="_blank" rel="noopener">TikTok</a>
         <a href="https://www.instagram.com/sketch.dev.studio" target="_blank" rel="noopener">Instagram</a>
         <a href="https://www.youtube.com/@sketchdevstudio" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://play.google.com/store/apps/developer?id=Sketch+Dev+Studio" target="_blank" rel="noopener">Google Play</a>
       </div>
     </div>
 
@@ -610,7 +611,7 @@
   <!-- ============================================
        BAHASA INGGRIS
        ============================================ -->
-  <div class="lang-section" id="lang-en">
+  <div class="lang-section active" id="lang-en">
 
     <h1>Terms & Conditions</h1>
     <p class="subtitle">Sketch Dev Studio — "From sketch, to game."</p>
@@ -792,6 +793,7 @@
         <a href="https://www.tiktok.com/@sketch.dev.studio" target="_blank" rel="noopener">TikTok</a>
         <a href="https://www.instagram.com/sketch.dev.studio" target="_blank" rel="noopener">Instagram</a>
         <a href="https://www.youtube.com/@sketchdevstudio" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://play.google.com/store/apps/developer?id=Sketch+Dev+Studio" target="_blank" rel="noopener">Google Play</a>
       </div>
     </div>
 
@@ -802,7 +804,7 @@
 <button class="back-top" onclick="window.scrollTo({top:0, behavior:'smooth'})">↑</button>
 
 <script>
-  let currentLang = 'id';
+  let currentLang = 'en';
 
   function toggleLang() {
     const idSection = document.getElementById('lang-id');
@@ -851,7 +853,7 @@
       document.getElementById('modeBtn').textContent = '☀️ Terang';
       currentMode = 'dark';
     }
-    if (savedLang === 'en') {
+    if (savedLang === 'id') {
       toggleLang();
     }
   });
